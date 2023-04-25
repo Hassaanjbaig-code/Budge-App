@@ -1,4 +1,4 @@
-class Payments < ApplicationController
+class PaymentsController < ApplicationController
   def index
     @payment = Payment.all
   end
