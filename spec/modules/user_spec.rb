@@ -1,18 +1,18 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-    describe 'Validations' do
-      before do 
-        @user = User.create(name: 'John')
+  describe 'Validations' do
+    before do
+      @user = User.create(name: 'John')
     end
     it 'should be valid with valid attributes' do
-        expect(@user).to be_valid
+      expect(@user).to be_valid
     end
     it 'should have a name' do
-        expect(@user.name).to be_present
+      expect(@user.name).to be_present
     end
     it 'should have a unique name' do
-        expect(@user.name).to eq('John')
+      expect(@user.name).to eq('John')
     end
-end
+  end
 end
