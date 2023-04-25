@@ -1,5 +1,5 @@
 class Payments < ApplicationController
-  def new
-    @payment = Payment.new
+  def index
+    @payment = Payment.all
   end
 end
