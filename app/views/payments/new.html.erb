@@ -1,0 +1,9 @@
+<h2>Add a new Patment</h2>
+
+<%= form_with model: [@group, @payment], url: group_payments_path do |f| %>
+  <%= f.label :name %>
+    <%= f.text_field :name %> <br>
+    <%= f.label :amount %>
+    <%= f.text_field :amount %> <br>
+    <%= f.submit "Add Payment" %>
+<% end %>

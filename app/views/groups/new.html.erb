@@ -1,0 +1,10 @@
+<h2>Create a Catagories</h2>
+
+<%= form_for @group do |f| %>
+  <%# <%= render 'shared/error_messages', object: f.object %> %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :icon %>
+  <%= f.text_field :icon %>
+  <%= f.submit "Create Catagories" %>
+<% end %>

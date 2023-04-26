@@ -1,1 +1,12 @@
 <h2>This is the payment page</h2>
+
+<ul>
+<% @payments.each do | payment | %>
+    <li class="catag">
+        <h3><%= payment.name %></h3>
+        <p><%= payment.amount %></p>
+    </li>
+<% end %>
+</ul>
+
+<%= link_to "New Payment", new_group_payment_path %>
