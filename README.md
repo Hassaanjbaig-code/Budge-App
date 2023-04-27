@@ -36,9 +36,6 @@ For more details about the project description, please check on the [Video](http
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
 
 <details>
   <summary>Server</summary>
@@ -179,7 +176,7 @@ I would like to thank [Gregoire Vella on Behance](https://www.behance.net/gregoi
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
