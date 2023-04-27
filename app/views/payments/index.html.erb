@@ -1,0 +1,16 @@
+<h2 class="main">Transactions</h2>
+<div>
+<ul class="Catagories">
+ <h4>Total amount of the Transactions <%= @payments.sum(&:amount) %></h4>
+<% @payments.each do | payment | %>
+    <li class="catag payment">
+        <h3><%= payment.name %></h3>
+        <p>$ <%= payment.amount %></p>
+    </li>
+<% end %>
+</ul>
+
+<div class="btn-main">
+<%= link_to "New Payment", new_group_payment_path, class:"Btn" %>
+</div>
+</div>

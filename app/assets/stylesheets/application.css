@@ -1,15 +1,211 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import "font-awesome";
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/assets/fonts/5475-font.ttf') format('ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.welcome-main {
+  height: 100vh;
+  width: 100%;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  font-size: 3rem;
+}
+
+.Btn-log {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.Logn-In {
+  text-decoration: none;
+  padding: 1rem;
+  width: 15rem;
+  text-align: center;
+  border: 1px solid #3778c2;
+  margin: 3px;
+  color: #434b54;
+  font-size: 1.2rem;
+}
+
+.Logn-In:hover {
+  background: #3778c2;
+  color: #fff;
+}
+
+.Catagories {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-form {
+  margin-left: 12px;
+}
+
+.catag {
+  list-style: none;
+  display: flex;
+  width: 23rem;
+  margin: 7px;
+  height: 6rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.catag img {
+  width: 9rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.catag a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  background: #bfb5b566;
+  padding: 6px;
+}
+
+.catag a p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #434b54;
+  text-align: end;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 3rem;
+  background-color: #3778c2;
+  display: flex;
+}
+
+.navbar_list {
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back_button {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 12px;
+}
+
+.main {
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+  color: #434b54;
+}
+
+.Btn {
+  width: 95%;
+  display: flex;
+  padding: 1.4rem;
+  justify-content: center;
+  border: 1px solid #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 12px;
+}
+
+.Btn-Out {
+  font-size: 15px;
+  color: #434b54;
+  text-decoration: none;
+  padding: 3px;
+  border: 1px double #ffffff96;
+  border-radius: 5px;
+}
+
+.btn-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  background-color: #5fb523;
+}
+
+.Btn:hover {
+  background-color: #3778c2;
+  color: #fff;
+}
+
+.From {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.From input {
+  width: 13rem;
+  padding: 7px;
+  margin-bottom: 12px;
+}
+
+.From input[type="submit"] {
+  width: 10rem;
+  padding: 3px;
+  background-color: #5fb523;
+  color: #fff;
+  cursor: pointer;
+}
+
+.payment {
+  justify-content: space-between;
+  border: 1px solid #3a3e4244;
+}
+
+.field input[type="checkbox"] {
+  width: 12px;
+}
+
+.N-form input {
+  margin-bottom: 16px;
+}
+
+.Num-form {
+  border: 1px solid #434b54;
+  border-radius: 2px;
+}
+
+.Sign {
+  text-decoration: none;
+  color: #434b54;
+}
+
+@media screen and (max-width: 768px) {
+  .Sn_from input {
+    width: 12rem;
+    padding: 6px;
+  }
+}

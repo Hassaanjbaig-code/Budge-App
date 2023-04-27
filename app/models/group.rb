@@ -1,4 +1,6 @@
 class Group < ApplicationRecord
   belongs_to :user
-  has_many :group_payments, foreign_key: :group_id, dependent: :destroy
+  # has_many :group_payments
+  # has_many :payments, through: :group_payments
+  has_and_belongs_to_many :payments, dependent: :destroy
 end

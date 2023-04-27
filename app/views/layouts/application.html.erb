@@ -11,6 +11,14 @@
   </head>
 
   <body>
+     <% unless current_page?(root_path) %> 
+      <header>
+        <%= render "navbar/index" %>
+      </header>
+    <% end %>
+    <%# <%= render "navbar/index" %> 
+     <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,18 @@
+<h2 class="main">Categories</h2>
+
+<div>
+<ul class="Catagories">
+<% @groups.each do | group | %>
+    <li class="catag">
+        <a href="<%= "/groups/#{group.id}/payments" %>">
+       <img src= <%= group.icon %> />
+        <h3><%= group.name %></h3>
+        <p>$ <%= group.payments.map { |s| s.amount }.sum %></p>  
+     </a>
+    </li>
+<% end %>
+</ul>
+<div class="btn-main">
+<%= link_to "New Category", new_group_path, class:"Btn" %>
+</div>
+</div>
