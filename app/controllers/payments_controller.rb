@@ -15,7 +15,7 @@ class PaymentsController < ApplicationController
     @payment.user_id = @group.user_id
     @group.payments << @payment
 
-    if @payment.save 
+    if @payment.save
       redirect_to group_payments_path(@group)
     else
       render :new
