@@ -64,6 +64,8 @@ After you're finished please remove all the comments and instructions!
 
 **[Budge App]** that allows users to track their budget by keeping track of their transactions based on different catagories specified by the user.
 
+For more details about the project description, please check on the [Video](https://www.loom.com/share/310a08b41b714df1af3a068018042eb1).
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -208,8 +210,6 @@ I would like to thank [Gregoire Vella on Behance](https://www.behance.net/gregoi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
