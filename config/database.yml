@@ -85,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: Budge_production
-  username: Budge
-  password: <%= ENV["BUDGE_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
