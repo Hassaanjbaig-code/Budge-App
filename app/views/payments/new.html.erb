@@ -2,8 +2,10 @@
 
 <%= form_with model: [@group, @payment], url: group_payments_path do |f| %>
   <%= f.label :name %>
-    <%= f.text_field :name %> <br>
+    <%= f.text_field :name, :required => true %> <br>
     <%= f.label :amount %>
-    <%= f.text_field :amount %> <br>
+    <%= f.text_field :amount, :required => true %> <br>
+    <%= f.label :Catagories %> 
+    <%= f.select :group_id,  options_for_select(@groups.collect{ |f| [f.name, f.id] }), { prompt: "Choose ..." }  %> <br>
     <%= f.submit "Add Payment" %>
 <% end %>

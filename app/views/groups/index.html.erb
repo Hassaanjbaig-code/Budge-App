@@ -1,5 +1,6 @@
-<h2>Categories</h2>
+<h2 class="main">Categories</h2>
 
+<div>
 <ul class="Catagories">
 <% @groups.each do | group | %>
     <li class="catag">
@@ -11,5 +12,7 @@
     </li>
 <% end %>
 </ul>
-
-<%= link_to "New Category", new_group_path %>
+<div class="btn-main">
+<%= link_to "New Category", new_group_path, class:"Btn" %>
+</div>
+</div>

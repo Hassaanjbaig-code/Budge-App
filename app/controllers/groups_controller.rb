@@ -2,8 +2,6 @@ class GroupsController < ApplicationController
  def index
    @user = current_user
    @groups = Group.where(user_id: @user.id)
-   # payment = Payment.where(user_id: @user.id)
-   # @amount = GroupPayment.where(group_id: @groups.ids).joins(:payment).select('sum(payments.amount) as total_amount').group(:group_id)
  end
  def new
    @group = Group.create
