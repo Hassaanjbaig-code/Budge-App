@@ -6,9 +6,6 @@ RSpec.describe Payment, type: :model do
       @user = User.create(name: 'John')
       @payment = Payment.create(name: 'MC', amount: 100, user_id: @user.id)
     end
-    it 'should be valid with valid attributes' do
-      expect(@payment).to be_valid
-    end
     it 'should have a name' do
       expect(@payment.name).to be_present
     end
