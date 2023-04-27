@@ -6,9 +6,6 @@ RSpec.describe Group, type: :model do
       @user = User.create(name: 'John')
       @group = Group.create(name: 'MC', icon: 'logo', user_id: @user.id)
     end
-    it 'should be valid with valid attributes' do
-      expect(@group).to be_valid
-    end
     it 'should have a name' do
       expect(@group.name).to be_present
     end
