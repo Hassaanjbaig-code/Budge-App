@@ -1,7 +1,53 @@
+@import "font-awesome";
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/assets/fonts/5475-font.ttf') format('ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.welcome-main {
+  height: 100vh;
+  width: 100%;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  font-size: 3rem;
+}
+
+.Btn-log {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.Logn-In {
+  text-decoration: none;
+  padding: 1rem;
+  width: 15rem;
+  text-align: center;
+  border: 1px solid #3778c2;
+  margin: 3px;
+  color: #434b54;
+  font-size: 1.2rem;
+}
+
+.Logn-In:hover {
+  background: #3778c2;
+  color: #fff;
 }
 
 .Catagories {
@@ -9,6 +55,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.text-form {
+  margin-left: 12px;
 }
 
 .catag {
@@ -86,9 +136,12 @@
 }
 
 .Btn-Out {
-  font-size: 20px;
+  font-size: 15px;
   color: #434b54;
   text-decoration: none;
+  padding: 3px;
+  border: 1px double #ffffff96;
+  border-radius: 5px;
 }
 
 .btn-main {
@@ -136,7 +189,23 @@
   width: 12px;
 }
 
+.N-form input {
+  margin-bottom: 16px;
+}
+
+.Num-form {
+  border: 1px solid #434b54;
+  border-radius: 2px;
+}
+
 .Sign {
   text-decoration: none;
   color: #434b54;
+}
+
+@media screen and (max-width: 768px) {
+  .Sn_from input {
+    width: 12rem;
+    padding: 6px;
+  }
 }

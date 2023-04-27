@@ -5,7 +5,7 @@
 <% @payments.each do | payment | %>
     <li class="catag payment">
         <h3><%= payment.name %></h3>
-        <p><%= payment.amount %></p>
+        <p>$ <%= payment.amount %></p>
     </li>
 <% end %>
 </ul>

@@ -7,7 +7,7 @@
         <a href="<%= "/groups/#{group.id}/payments" %>">
        <img src= <%= group.icon %> />
         <h3><%= group.name %></h3>
-        <p><%= group.payments.map { |s| s.amount }.sum %></p>  
+        <p>$ <%= group.payments.map { |s| s.amount }.sum %></p>  
      </a>
     </li>
 <% end %>
