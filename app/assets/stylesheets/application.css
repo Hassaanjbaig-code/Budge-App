@@ -14,6 +14,10 @@
   font-family: 'Proxima Nova', sans-serif;
 }
 
+body {
+  background-color: #f0f2f1;
+}
+
 .welcome-main {
   height: 100vh;
   width: 100%;
@@ -64,7 +68,7 @@
 .catag {
   list-style: none;
   display: flex;
-  width: 23rem;
+  width: 25rem;
   margin: 7px;
   height: 6rem;
   flex-wrap: wrap;
@@ -73,20 +77,22 @@
 
 .catag img {
   width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-  margin-right: 1rem;
+  height: 5rem;
+}
+
+.catag h3 {
+  color: #434b5475;
 }
 
 .catag a {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 6rem 13rem;
+  grid-template-columns: 7rem 13rem;
   width: 100%;
   align-items: center;
   text-decoration: none;
-  background: #bfb5b566;
-  padding: 6px;
+  background: #fff;
+  padding: 9px;
 }
 
 .catag a p {
@@ -131,6 +137,7 @@
   padding: 1.4rem;
   justify-content: center;
   border: 1px solid #fff;
+  color: #fff;
   font-size: 1.4rem;
   text-decoration: none;
   cursor: pointer;
@@ -153,6 +160,17 @@
   position: absolute;
   bottom: 0;
   background-color: #5fb523;
+}
+
+.group-data {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.group-data h3:last-child {
+  font-size: 0.7rem;
 }
 
 .Btn:hover {
@@ -209,5 +227,22 @@
   .Sn_from input {
     width: 12rem;
     padding: 6px;
+  }
+
+  .catag {
+    width: 22rem;
+  }
+
+  .catag a {
+    grid-template-columns: 6rem 13rem;
+  }
+
+  .catag img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .catag h3 {
+    font-size: 1rem;
   }
 }

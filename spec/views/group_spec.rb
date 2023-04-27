@@ -5,7 +5,7 @@ RSpec.describe 'Groups', type: :system do
     before do
       visit user_session_path
 
-      fill_in 'Email', with: 'bar@yopmail.com '
+      fill_in 'Email', with: 'foo@yopmail.com '
       fill_in 'Password', with: '1234567'
 
       click_on 'Log in'
