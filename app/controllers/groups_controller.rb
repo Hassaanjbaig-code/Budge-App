@@ -1,7 +1,7 @@
 class GroupsController < ApplicationController
   def index
     @user = current_user
-    @groups = Group.where(user_id: @user.id)
+    @groups = Group.includes([:payments]).where(user_id: @user.id)
   end
 
   def new
