@@ -245,4 +245,9 @@ body {
   .catag h3 {
     font-size: 1rem;
   }
+
+  .Catagories {
+    height: 66vh;
+    overflow: auto;
+  }
 }
