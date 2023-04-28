@@ -1,0 +1,13 @@
+<h2 class="main">Add a new Patment</h2>
+
+<div class="From N-form">
+<%= form_with model: [@group, @payment], url: group_payments_path do |f| %>
+  <%= f.label :name %>
+    <%= f.text_field :name, class: "text-form", :required => true %> <br>
+    <%= f.label :amount %>
+    <%= f.number_field :amount, min: 0, class: "Num-form", :required => true %> <br>
+    <%= f.label :Catagories %> 
+    <%= f.select :group_id,  options_for_select(@groups.collect{ |f| [f.name, f.id] }), { prompt: "Choose ..." }  %> <br>
+    <%= f.submit "Add Payment" %>
+<% end %>
+</div>

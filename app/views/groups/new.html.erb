@@ -1,0 +1,11 @@
+<h2 class="main">Create a Catagories</h2>
+
+<div class="From">
+<%= form_for @group do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name, :required => true %><br>
+  <%= f.label :icon %><br>
+  <%= f.text_field :icon, :required => true %><br>
+  <%= f.submit "Create Catagories" %>
+<% end %>
+</div>
