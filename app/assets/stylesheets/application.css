@@ -192,12 +192,23 @@ body {
   margin-bottom: 12px;
 }
 
+.new_user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
 .From input[type="submit"] {
   width: 10rem;
   padding: 3px;
   background-color: #5fb523;
   color: #fff;
-  cursor: pointer;
+  cursor: pointer;;
 }
 
 .payment {
